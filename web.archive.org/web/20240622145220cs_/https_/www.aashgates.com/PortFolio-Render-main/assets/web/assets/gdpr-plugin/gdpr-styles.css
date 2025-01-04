@@ -1,0 +1,47 @@
+.gdpr-block {
+    padding: 10px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.gdpr-block.covert {
+	display: none;
+}
+.textGDPR {
+    position: relative;
+}
+.gdpr-block label span.textGDPR input[name='gdpr']{
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    position: absolute;
+    top: 2px;
+    left: -20px;
+}
+.gdpr-block label {
+    color: #a7a7a7;
+    vertical-align: middle;
+    user-select: none;
+    margin-bottom: 0;
+}
+/*
+     FILE ARCHIVED ON 14:52:20 Jun 22, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:59:51 Jan 04, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.563
+  exclusion.robots: 0.021
+  exclusion.robots.policy: 0.01
+  esindex: 0.012
+  cdx.remote: 6.22
+  LoadShardBlock: 383.038 (3)
+  PetaboxLoader3.datanode: 135.412 (4)
+  PetaboxLoader3.resolve: 366.555 (2)
+  load_resource: 188.641
+*/
