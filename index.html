@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=web/20241222133849/https_/aashgates.com/index.html">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Auto-redirect after 3 seconds
+        setTimeout(() => {
+            window.location.href = "web/20241222133849/https_/aashgates.com/index.html"; // Change this to your redirect URL
+        }, 3000);
+    </script>
 </head>
-<body>
-    <p>If you are not redirected automatically, <a href="web/20241222133849/https_/aashgates.com/index.html">click here</a>.</p>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="text-center">
+        <!-- Loading Spinner -->
+        <div class="flex items-center justify-center mb-4">
+            <div class="w-10 h-10 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+        </div>
+        <!-- Redirect Message -->
+        <h1 class="text-xl font-semibold text-gray-700">Redirecting, please wait...</h1>
+        <p class="text-sm text-gray-500 mt-2">
+            If you are not redirected automatically, 
+            <a href="web/20241222133849/https_/aashgates.com/index.html" class="text-blue-600 hover:underline">click here</a>.
+        </p>
+    </div>
 </body>
 </html>
