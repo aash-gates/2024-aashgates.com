@@ -7,23 +7,50 @@
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        // Auto-redirect after 3 seconds
-        setTimeout(() => {
-            window.location.href = "web/20241222133849/https_/aashgates.com/index.html"; // Change this to your redirect URL
-        }, 3000);
+        document.addEventListener("DOMContentLoaded", () => {
+            let countdown = 3; // Countdown in seconds
+            const countdownElement = document.getElementById("countdown");
+
+            const interval = setInterval(() => {
+                countdown--;
+                countdownElement.textContent = countdown;
+                if (countdown <= 0) {
+                    clearInterval(interval);
+                    // Redirect to the target URL
+                    window.location.href = "web/20241222133849/https_/aashgates.com/index.html"; // Update with your URL
+                }
+            }, 1000);
+        });
     </script>
+    <style>
+        /* Animated gradient background */
+        body {
+            background: linear-gradient(120deg, #1e3a8a, #9333ea, #22d3ee);
+            background-size: 300% 300%;
+            animation: gradientAnimation 6s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center h-screen">
+<body class="flex items-center justify-center min-h-screen text-white">
     <div class="text-center">
-        <!-- Loading Spinner -->
-        <div class="flex items-center justify-center mb-4">
-            <div class="w-10 h-10 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+        <!-- Spinning Loader -->
+        <div class="relative w-16 h-16 mb-6 mx-auto">
+            <div class="absolute inset-0 border-4 border-dashed border-blue-400 rounded-full animate-spin"></div>
+            <div class="absolute inset-4 border-4 border-solid border-blue-600 rounded-full"></div>
         </div>
-        <!-- Redirect Message -->
-        <h1 class="text-xl font-semibold text-gray-700">Redirecting, please wait...</h1>
-        <p class="text-sm text-gray-500 mt-2">
+        <!-- Countdown Message -->
+        <h1 class="text-3xl font-bold mb-2">
+            Redirecting in <span id="countdown" class="text-yellow-400">3</span> seconds...
+        </h1>
+        <p class="text-lg text-gray-200">
             If you are not redirected automatically, 
-            <a href="web/20241222133849/https_/aashgates.com/index.html" class="text-blue-600 hover:underline">click here</a>.
+            <a href="web/20241222133849/https_/aashgates.com/index.html" class="underline text-blue-300 hover:text-blue-400">click here</a>.
         </p>
     </div>
 </body>
